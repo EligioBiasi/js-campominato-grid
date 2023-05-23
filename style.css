@@ -4,12 +4,9 @@
     box-sizing: border-box;
 }
 
-body{
+header{
     width: 1200px;
     margin: 0 auto;
-}
-
-header{
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
@@ -19,6 +16,34 @@ main{
     background-color: #7fffd4;
 }
 
+footer{
+    width: 1200px;
+    margin: 0 auto;
+}
+
 header button{
     padding: 0 1.5rem;
+}
+
+main section {
+    padding: 3rem 0;
+}
+
+div.grid{
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.square{
+    width: calc(100%/10);
+    height: calc(100%/10);
+    cursor: wait;
+    border: solid 2px black;
+}
+
+.azure-square{
+    background-color: azure;
 }

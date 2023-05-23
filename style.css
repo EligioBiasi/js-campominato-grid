@@ -42,7 +42,12 @@ div.square{
     width: calc(100%/10);
     height: calc(100%/10);
     cursor: pointer;
-    border: solid 2px black;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
 .azure-square{

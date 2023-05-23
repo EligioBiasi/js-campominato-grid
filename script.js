@@ -14,7 +14,7 @@ for(i=1;i<101;i++){
 
     showingSquare.addEventListener('click', function(){
         showingSquare.classList.toggle('azure-square');
-        console.log(showingSquare.append())
+        console.log(document.querySelector('div.azure-square').innerHTML)
     })
 }
 

@@ -4,10 +4,14 @@ const button = document.getElementById('button-game');
 
 for(i=0;i<100;i++){
     const showingSquare = crateSquare('div', 'square')
-    
+
     button.addEventListener('click',function(){
-        gridContainer.classList.add('grid')
+        gridContainer.classList.add('grid');
+        showingSquare.classList.add('square');
+        gridContainer.appendChild(showingSquare);
     })
+
+
 }
 
 /**

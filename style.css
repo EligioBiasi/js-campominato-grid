@@ -40,7 +40,7 @@ div.grid{
 div.square{
     width: calc(100%/10);
     height: calc(100%/10);
-    cursor: wait;
+    cursor: pointer;
     border: solid 2px black;
 }
 

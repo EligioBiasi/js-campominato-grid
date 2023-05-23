@@ -3,15 +3,13 @@ const button = document.getElementById('button-game');
 
 
 for(i=0;i<100;i++){
-    const showingSquare = crateSquare('div', 'square')
-
     button.addEventListener('click',function(){
         gridContainer.classList.add('grid');
+        const showingSquare = createSquare('div', 'square')
         showingSquare.classList.add('square');
         gridContainer.appendChild(showingSquare);
+        showingSquare.append([i])
     })
-
-
 }
 
 /**
@@ -19,7 +17,7 @@ for(i=0;i<100;i++){
  * @param tag 
  * @param classTag 
  */
-function crateSquare (tag, classTag){
+function createSquare (tag, classTag){
     const square = document.createElement(tag);
     square.classTag+= classTag;
     return square;

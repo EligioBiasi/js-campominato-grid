@@ -2,13 +2,14 @@ const gridContainer = document.querySelector('div');
 const button = document.getElementById('button-game');
 
 
-for(i=0;i<100;i++){
+for(i=1;i<101;i++){
+    const showingSquare = createSquare('div','square');
+    showingSquare.append([i]);
+    
     button.addEventListener('click',function(){
         gridContainer.classList.add('grid');
-        const showingSquare = createSquare('div', 'square')
         showingSquare.classList.add('square');
         gridContainer.appendChild(showingSquare);
-        showingSquare.append([i])
     })
 }
 
